@@ -1,0 +1,26 @@
+package edu.week1;
+
+public class BaiTap2 {
+	public static void main(String[] args) {
+		int i= 3;
+		int cnt = 1;
+		System.out.print(2+ " ");
+		while(true) {
+			if(checkPrime(i)) {
+				System.out.print(i + " ");
+				cnt++;
+			}
+			i++;
+			if(cnt == 20) break;
+		}
+		System.out.println();
+		System.out.println("Hoang Phuc Hung - 20183756");
+	}
+	public static boolean checkPrime(int k) {
+		for(int j = 2; j < k;j++) {
+			if(k%j == 0) return false;
+			
+		}
+		return true;
+	}
+}
